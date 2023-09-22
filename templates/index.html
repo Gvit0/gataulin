@@ -5,10 +5,11 @@
     <title>Главная</title>
 </head>
 <body>
-    <form action="{{url_for('otvet') }}">
+    <form action="/otvet" METHOD="get">
         <input type="number" name="a" placeholder="число a">
-        <input type="number" name="b"0 placeholder="число b">
+        <input type="number" name="b" placeholder="число b">
         <input type="submit" value="решить">
     </form>
+{{otvetic}}
 </body>
 </html>
