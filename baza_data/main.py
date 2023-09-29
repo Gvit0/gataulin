@@ -6,7 +6,7 @@ app = Flask(__name__)
 from flask_sqlalchemy import SQLAlchemy
 
 # Конфигурация базы данных
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pages.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
 
 # Модель данных для страниц
@@ -18,7 +18,7 @@ class Page(db.Model):
         return f'<Page {self.id}>'
 
 # Создаем таблицу в базе данных (если она еще не создана)
-db.create_all()
+
 
 # Главная страница
 @app.route('/')
