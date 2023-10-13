@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>НУ сто рублей</title>
+</head>
+
+
+<form action="/" method="get">
+    <button type="submit" name="g" value=1>  Красный</button>
+    <button type="submit" name="g" value=2>  Жёлтый</button>
+    <button type="submit" name="g" value=3>  Зелёный</button>
+</form>
+{% if g==1 %}
+    <body bgcolor="red">\></body>
+{% else %}
+    {% if g==2 %}
+        <body bgcolor="yellow"></body>
+    {% else %}
+        {% if g==3 %}
+            <body bgcolor="green"></body>
+        {% endif %}
+    {% endif %}
+{% endif %}
+</body>
+</html>
