@@ -12,13 +12,16 @@
     <button type="submit" name="g" value=3>  Зелёный</button>
 </form>
 {% if g==1 %}
-    <body bgcolor="red">\></body>
+    <body bgcolor="red"></body>
+    <img src="static/1.png">
 {% else %}
     {% if g==2 %}
         <body bgcolor="yellow"></body>
+        <img src="static/2.png">
     {% else %}
         {% if g==3 %}
             <body bgcolor="green"></body>
+            <img src="static/3.jpeg">
         {% endif %}
     {% endif %}
 {% endif %}
